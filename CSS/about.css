@@ -1,0 +1,928 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.scope{
+    display: none;
+}
+.top{
+    padding: 1.5vh;
+    border-radius: 2em;
+    border: 0;
+    color: white;
+    background-color: rgb(4, 236, 93);
+    position: fixed;
+    left: 94vw;
+    top: 50vh;
+}
+.top a{
+    color: white;
+    text-decoration: none;
+}
+.top a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(16, 139, 64);
+}
+.top:hover{
+    background-color: rgb(16, 139, 64);
+}
+
+/* navbar */
+.navbar{
+    height: 13vh;
+    width: 100%;
+    background-color: white;
+}
+.sticky_navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    width: 5vw;
+    height: 8.5vh;
+    margin: 0 2vw;
+    margin-right: 1vw;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    margin-right: 7vw;
+}
+/* This is the Hero section  */
+.hero_image{
+    background-image: url('../images/er.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    margin-top: 13vh;
+}
+.hero_content{
+    width: 50vw;
+    position: relative;
+    left: 10vw;
+    top: 42vh;
+}
+.surf_now{
+    padding: 1.5vh;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    font-weight: bolder;
+}
+.surf_now:hover{
+    color: rgba(0, 0, 0, 0.274);
+    background-color: white;
+}
+.services{
+    padding: 1.5vh;
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+}
+.services:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.226);    
+}
+.hero_heading{
+    color: white;
+    font-size: 10vh;    
+}
+.hero_paragraph{
+    color: white;
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* what_we_do_section  */
+.what_we_do_heading{
+    text-align: center;
+    padding: 5vh 0;
+}
+.what_we_do_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85vw;
+    margin-left: 7vw;
+    grid-gap: 1vw;
+}
+.what_we_do_img{
+    width: 27vw;
+    height: 35vh;
+    transition: 0.2s all;
+}
+.what_we_do_img:hover{
+    transform: scale(1.055);
+}
+.what_we_do_txt{
+    width: 27vw;
+}
+.what_we_do_special{
+    width: 27vw;
+    height: 50vh;
+    border: 5px solid #0baf5d;
+    padding: 3vh;
+}
+
+
+
+
+/* number counter */
+.statistics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+} 
+.number_count{
+    color: #5577B4;
+}
+
+
+
+/* this is the brief intro  */
+.brief_intro{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    background-color: #f8f8f8;
+}
+.brief_discription_550px{
+    display: none;
+}
+.brief_discription{
+    width: 40vw;
+    padding: 7vh;
+    position: absolute;
+    margin-top: 25vh;
+    left: 45vw;
+    background-color: rgba(255, 255, 255, 0.593);
+    color: black;
+    box-shadow: 3px 3px 5px grey;
+}
+.brief_discription h1{
+    font-size: 6vh;
+    margin-bottom: 2vh;
+}
+.brief_discription p{
+    font-size: 2.5vh;
+    margin-bottom: 3vh;
+}
+.learn_more{
+    padding: 1.8vh;
+    background-color: #0baf5d;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0.2em;
+    transition: 0.3s all;
+}
+.learn_more:hover{
+    color: rgb(6, 180, 73);
+    padding: 2.3vh;
+    background-color: white;
+    border: 2px solid seagreen;
+}
+
+.brief_intro_img{
+    width: 48vw;
+    height: 75vh;
+    margin-left: 8vw;
+    margin-top: 3vh;
+}
+
+/* team  */
+.trust{
+    z-index: 30;
+    color: white;
+    background-color: white;
+}
+.our_team{
+    text-align: center;
+    padding: 5vh 0;
+}
+.team_grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    width: 80vw;
+    margin-left: 10vw;
+}
+.special_team{
+    display: none;
+}
+.profile_picture{
+    width: 25vw;    
+}
+.profile_picture1{
+    background-image: linear-gradient(#00000000, rgba(255, 255, 255, 0)), url(../images/ME.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1.5em;
+    cursor: pointer;
+    z-index: 50;
+}
+.profile_picture1:hover{
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/ME.jpg);
+}
+.popup_content{
+    font-size: 5vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 21vw;
+    margin-left: 2vw;
+    margin-top: 48vh;
+    /* padding: 1vh; */
+    border-radius: 0.3em;
+    transition: 0.1s all;
+    background-color: white;
+    color: rgb(8, 170, 75);
+}
+.popup_content{
+    /* background-color: white; */
+    background-color: rgb(8, 170, 75);
+}
+.popup_content:hover{
+    background-color: white;
+}
+.popup_content a{
+    /* background-color: rgb(8, 170, 75); */
+    color: white;
+    /* border-radius: 50%; */
+}
+.popup_content:hover a{
+    
+    color: #0baf5d;
+}
+.social_media_link{
+    padding: 1vh;
+}
+.profile_picture2{
+    background-image: linear-gradient(#ffffff00, rgba(255, 249, 249, 0)), url(../images/ME.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1.5em;
+    z-index: 20;
+}
+
+.profile_picture2:hover{
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/team3.png);
+}
+.profile_picture3{
+    background-image: linear-gradient(#00000000, rgba(255, 255, 255, 0)), url(../images/team4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1.5em;
+}
+.profile_picture3:hover{
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/team4.png);
+}
+
+
+
+/* This is the gallery section */
+.gallery_section{
+    background-color: #f3f1f1bb;
+    padding: 5vh 0;
+    margin: 5vh 0;
+}
+.gallery_image_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw;
+    width: 85vw;
+    margin-left: 7vw;
+    margin-bottom: 7vh;
+    /* padding-left: 10vw; */
+}
+.fertilizer1{
+    background-image: url(../images/pest1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.fertilizer2{
+    background-image: url(../images/pest2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.fertilizer3{
+    background-image: url(../images/pest3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.fertilizer4{
+    background-image: url(../images/pest4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.fertilizer1:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/pest1.jpg);
+}
+.fertilizer2:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/pest2.jpg);
+}
+.fertilizer3:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/pest3.jpg);
+}
+.fertilizer4:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/pest4.jpg);
+}
+.soil_img1{
+    background-image: url(../images/soil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.soil_img2{
+    background-image: url(../images/soil3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.soil_img3{
+    background-image: url(../images/soil4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.soil_img4{
+    background-image: url(../images/soil6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.soil_img1:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/soil.jpg);
+}
+.soil_img2:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/soil3.jpg);
+}
+.soil_img3:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/soil4.jpg);
+}
+.soil_img4:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/soil6.jpg);
+}
+.equip1{
+    background-image: url(../images/watering_can1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.equip2{
+    background-image: url(../images/g1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.equip3{
+    background-image: url(../images/g2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.equip4{
+    background-image: url(../images/g3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+    transition: 1s all;
+}
+.equip1:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/watering_can1.jpg);
+}
+.equip2:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/g1.jpg);
+}
+.equip3:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/g2.jpg);
+}
+.equip4:hover{
+    transform: scale(1.04);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/g3.jpg);
+}
+.gallery_section{
+    
+}
+.galler_header{
+    text-align: center;
+    font-size: 7vh;
+    margin-top: 5vh;
+}
+.gallery_categories{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.first_gallery_category_btn{
+    background-color: rgb(9, 196, 71);
+    padding: 1.5vh;
+    border-radius: 2em;
+    border: 0;
+    color: white;
+}
+.gallery_category_btn{
+    padding: 1.5vh;
+    border-radius: 2em;
+    border: 0;
+    background-color: #f5f5f5;
+    color: black;
+    transition: 0.3s all;
+}
+.gallery_category_btn:hover{
+    background-color: rgb(9, 196, 71);
+    color: white;
+}
+#fertilizer1, #fertilizer2, #fertilizer3, #fertilizer4, #soil1, #soil2, #soil3, #soil4, #equipment1, #equipment2, #equipment3, #equipment4{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; */
+    padding: 2vh;
+}
+.all_gallery_images1 div{
+    display: none;
+}
+.all_gallery_images1:hover div{
+    display: grid;
+}
+.category_search_icons{
+    font-size: 6vh;
+    color: white;
+}
+.gallery_highlighter{
+    border: 5px solid rgb(16, 139, 64);
+    width: 18vw;
+    height: 25.5vh;
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    border-radius: 0.8em;
+}
+.gallery_highlighter:hover{
+    display: block;
+}
+
+/* locattion section  */
+.location_section{
+    height: 90vh;
+}
+
+/* faq section  */
+.faq_section{
+
+}
+.faq_heading{
+    text-align: center;
+    padding: 5vh 0;
+    color: #0baf5d;
+}
+.faq_grig{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    width: 80vw;
+    margin-left: 9vw;
+}
+.faq_div h1{
+    font-size: 3vh;
+}
+.faq_div p{
+    color: grey;
+}
+
+
+/* contact us  */
+.contact_section{
+    background-color: #e1e2e4a2;
+    margin-top: 6vh;
+    padding: 5vh 0;
+}
+.contact_header{
+    text-align: center;
+    color: rgb(18, 172, 95);
+    font-weight: bolder;
+    font-size: 7vh;
+}
+.contact_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10vw;
+    width: 80vw;
+    margin-top: 2vh;
+    height: 100%;
+}
+.contact_grid p{
+    text-align: center;
+}
+.contact_icon{
+    font-size: 10vh;
+    background-color: white;
+    padding: 3vh;
+    border-radius: 50%;
+    color: #0baf5d;
+}
+.contact_icon:hover{
+    color: white;
+    background-color: #0baf5d;
+}
+.contact_link:hover{
+    text-decoration: none;
+}
+
+
+
+
+/* footer */
+.all_footer{
+    background-color: #e1e2e4a2;
+}
+.footer_section{
+    background-color: #001f42;
+    height: 80vh;
+    margin-top: 0;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+    /* transform: translateY(-10%); */
+}
+.footer{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer_conclusion{
+    width: 40vw;
+    margin-left: 8vw;
+    padding-top: 20vh;
+    /* grid-area: footer_division1; */
+}
+.conclusion_p{
+    font-size: 2vh;
+}
+.footer_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40vw;
+    /* grid-gap: 1vw; */
+    margin-left: 8vw;
+}
+.footer_grid ul a{
+    color: white;
+}
+.footer_grid ul li{
+    list-style-type: none;
+}
+.news_letter{
+    width: 30vw;
+    height: 20vh;
+    background-color: seagreen;
+    padding: 3vh;
+}
+.newsleter_input{
+    width: 20vw;
+    height: 8vh;
+    padding: 0 1vw;
+}
+.newsletter_heading{
+    font-size: 3vh;
+}
+.newsletter_btn{
+    color: seagreen;
+    background-color: white;
+    height: 7.5vh;
+    width: 4vw;
+    border: 0;
+}
+.newsletter_btn:hover{
+    color: white;
+    background-color: seagreen;
+    border: 1px solid white;
+}
+.footer_division2{
+    padding-top: 20vh;
+    padding-left: 10vw;
+}
+.footer_icon_div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw;
+    width: 20vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+.footer_icons{
+    font-size: 6vh;
+    background-color: seagreen;
+    width: 6vw;
+    height: 6vw;
+    padding: 3.2vh;
+    border-radius: 50%;
+}
+.footer_icons:hover{
+    color: seagreen;
+    background-color: white;
+}
+.footer_contact{
+    text-align: center;
+    width: 30vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding-top: 5vh;
+}
+@media (max-width: 1300px){
+    .footer_icon_div{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .popup_content{
+        display: none;
+    }
+    .what_we_do_special h1{
+        font-size: 3vh;
+    }
+    .what_we_do_special{
+        padding: 1vh;
+    }
+    .what_we_do_card h2{
+        font-size: 3vh;
+    }
+    .what_we_do_card{
+        font-size: 2vh;
+    }
+}
+@media (max-width: 1000px) {
+    .collapse{
+        background-color: white;
+        width: 100%;
+        padding: 2vh;
+    }
+    .brief_discription{
+        padding: 3vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .brief_discription{
+        margin-top: 15vh;
+    }
+    .social_media_link{
+        font-size: 3vh;
+        padding: 0;
+    }
+    .popup_content{
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .team_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 1vw;
+        grid-gap: 1vw;
+    }
+    .profile_picture1, .profile_picture2, .profile_picture3{
+        width: 32vw;
+    }
+    .brief_discription{
+        margin-top: 9vh;
+        width: 45vw;
+        padding: 2vh;
+    }
+    .brief_discription h1{
+        font-size: 3vh;
+    }
+    .brief_discription p{
+        font-size: 2vh;
+    }
+    .brief_intro_img{
+        margin-left: 4vw;
+        width: 60vw;
+        height: 50vh;
+    }
+    .gallery_image_container{
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 3vw;
+    }
+    .all_gallery_images1{
+        width: 30vw;
+        padding: 1vh;
+    }
+    .gallery_highlighter{
+        width: 26vw;
+    }
+    .team_grid{
+        display: none;
+    }
+    .special_team{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1vw;
+        margin-left: 2.5vw;
+    }
+    .special_team_img{
+        width: 30vw;
+    }
+}
+@media (max-width: 750px) {
+    .what_we_do_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .what_we_do_special{
+        display: none;
+    }
+    .what_we_do_img{
+        width: 100%;
+    }
+    .what_we_do_txt{
+        width: 100%;
+    }
+    .scope{
+        display: block;
+        width: 85vw;
+        padding: 4vh;
+        border: 4px solid seagreen;
+        margin-left: 7vw;
+    }
+    
+    .footer_grid{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100vw;
+    }
+    .footer_division1{
+        height: 20vh;
+    }
+    .footer_division2{
+        padding-top: 0;
+        padding-left: 8vw;
+        padding-bottom: 0;
+    }
+    .conclusion_p{
+        width: 90vw;
+    }
+    .news_letter{
+        width: 80vw;
+    }
+    .newsleter_input{
+        width: 60vw;
+    }
+    .newsletter_btn{
+        width: 10vw;
+    }
+    .footer_icon_div{
+        display: none;
+    }
+    .footer_contact{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .gallery_image_container{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 3vw;
+    }
+    .all_gallery_images1{
+        width: 45vw;
+        padding: 0.5vh;
+    }
+    .gallery_highlighter{
+        width: 40vw;
+    }
+    .contact_grid{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .what_we_do_grid{
+        grid-template-columns: 1fr;
+    }
+    .what_we_do_img{
+        width: 85vw;
+    }
+    .what_we_do_txt{
+        width: 80vw;
+    }
+    .what_we_do_special{
+        width: 85vw;
+    }
+    .faq_grig{
+        grid-template-columns: 1fr;
+    }
+    .faq_heading{
+        width: 80vw;
+        margin: 0 auto;
+        font-size: 4vh;
+    }
+    .no_soil, .no_fertilizer, .no_equipment{
+        display: none;
+    }
+    .brief_discription{
+        display: none;
+    }
+    .brief_discription_550px{
+        display: block;
+        color: black;
+        border: 4px solid seagreen;
+        padding: 3vh;
+        width: 80vw;
+        margin: 2vh auto;
+    }
+    .brief_intro_img{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
+@media (max-width: 350px) {
+    .special_team{
+        grid-template-columns: 1fr;
+        margin-left: 10vw;
+    }
+    .special_team_img{
+        width: 85vw;
+    }
+}

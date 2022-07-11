@@ -1,0 +1,439 @@
+div.errormessage {
+    color: #ef4123;
+    display: block;
+    margin: 1% 2% 2% 24%;
+}
+
+
+#kgpheader  {
+	border: none;
+	border-bottom: 0;
+}
+
+#kgpheader img {display: block;}
+
+.kgp-dialog {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.kgp-dialog .actions {
+	margin: 20px 0;
+}
+
+.tools {
+	border-top: 1px solid #a5988f;
+	margin-bottom: 15px;
+	background-color: #ece6df;
+	margin-top: -1px;
+	padding: 5px 15px 15px 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+#gardenname, #sitemapname {
+	margin-bottom: 15px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+	}
+
+.toolbar_left, .toolbar_right { float: left; }
+.toolbar_left {
+	width: 230px;
+	clear: left;
+}
+.toolbar_right img {cursor: pointer;}
+#siteplaneditor .toolbar_right {margin-left: 60px;	}
+#siteplaneditor .toolbar_right img {margin-right: 10px;}
+.site-plan-buttons {
+	border-top: 1px solid #a5988f;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.site-plan-buttons > img { margin: 0 20px;	cursor: pointer; }
+
+#cropinfolist, #bedinfolist { 	margin-top: 20px;	}
+
+#bedinfolist {	margin-left: 45px;	}
+
+.bedindex_placed {
+	position: absolute;
+	z-index: 1070;
+	width: 15px;
+	height: 15px;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	border: 1px solid #005B44;
+	margin-left: 2px;
+	margin-top: 2px;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.bedindex {
+	width: 35px;
+	height: 35px;
+	font-size: 24px;
+	background-color: #FFFFFF;
+	border: 1px solid #005B44;
+	margin: 15px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+#cropinfolist h3, #bedinfolist h3 {
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+#cropinfolist ul {margin: 0;}
+
+#cropinfolist td {vertical-align: top; padding-bottom: 20px;}
+
+#cropinfolist a, #bedinfolist a {
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	}
+
+#cropinfolist  img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	}
+
+#cropinfolist li, #bedinfolist li {
+	list-style: disc;
+	margin-bottom: 8px;
+	margin-left: 20px;
+}
+
+.plantedcropname {
+	background-color: #FFE492;
+	border: 1px solid #EFC74C;
+	color: #BB7D33;
+	padding: 1px 0px 1px 0px;
+	font-size: 10px;
+	position: absolute;
+	display: none;
+	font-family: Arial, sans-serif;
+}
+
+div.errormessage { color: #ef4123; }
+
+#bedgrid {border: 5px solid #cebfac; margin: auto; }
+.bed-grid-container{margin:auto; text-align: center; }
+#gridprintcontainer {clear: both; position: relative; margin: auto;}
+.bedgridsquare {border: 1px solid  #cebfac; float: left; position: relative; text-align: center;}
+.bedgridsquare_active {background-color: #ece6df; border: 1px solid #7e551b}
+.cropdrag {width:100px; height: 100px; border: 1px solid #FF0000;}
+#cropinfo {float: left; clear: both; width: 750px; margin-top: 20px;}
+.saveform, .siteplansaveform {width: 560px; clear: both; float: left; border: 1px solid #8EC430; padding: 20px;  margin-top: 20px;}
+li.placed {list-style: none; float: left;}
+li.cropicon {list-style: none;}
+
+#grid {
+	float: left;
+	overflow: hidden;
+	clear: both;
+	position: relative;
+}
+
+#gridcontainer {
+	border: 1px solid #000000;
+	margin: auto;
+	overflow: hidden;
+	clear: both;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.gridsquare {
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	float: left;
+	position: relative;
+}
+
+.gridsquare_active {
+	background-color: #E0F4BD;
+	border-top: 1px solid #8EC430;
+	border-left: 1px solid #8EC430;
+	position: relative;
+}
+
+.gridrow {
+	position: absolute;
+}
+
+.gridcol {
+	position: absolute;
+}
+
+.cropdrag {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #FF0000;
+}
+
+.planttext {
+	text-align: center;
+}
+
+.placed .planttext {
+	display: none;
+}
+
+.bed {
+	position: absolute;
+	border: 1px solid #005B44;
+	background-color: none;
+	cursor: pointer;
+	text-align: left;
+}
+
+.chosenbed {
+	background-color: #E0F4BD;
+}
+
+.bedcollision {
+	background-color: #FF9999
+}
+
+.crop {
+	float: left;
+	font-size: 10px;
+	text-align: center;
+}
+
+.cropicon {
+	cursor: pointer;
+	text-align: center;
+	}
+
+.cropicon input {
+	position: absolute;
+	border: none;
+	background-color: #FFFFFF;
+	font-size: 10px;
+	line-height: 10px;
+	left: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	display: none;
+	z-index: 2000;
+}
+
+.cropicon input:hover {
+	background-color: #E0F4BD;
+}
+
+#croptip {
+	position: absolute;
+	z-index: 5001;
+	background-color: #FFE492;
+	border: 1px solid #EFC74C;
+	color: #BB7D33;
+	padding: 1px 3px 1px 3px;
+	font-size: 10px;
+}
+
+.carousel-container {
+	padding: 0 3em;
+}
+#preplanned-carousel {
+	background: #ece6df;padding-left: 5px;
+}
+.preplanned {
+	background-color: #fff;
+	margin: 10px 5px 0 0;
+	text-align: center;
+}
+
+.preplanned img{
+	opacity: 0.5;
+	-webkit-transition: opacity 0.8s, -webkit-transform 2s;
+    transition: opacity 0.8s, -webkit-transform 2s;
+}
+
+.preplanned.selected img, .preplanned img:hover{
+	opacity: 1;
+}
+
+.preplanned.selected p{
+	font-weight: bold;
+}
+
+.preplanned p {
+	color: #7e551b;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+#preplanned-info {
+	margin-left: 3em;
+	margin-bottom: 25px;
+}
+
+#preplanned-info .garden-name {
+	font-weight: bold;
+	font-size: 14px;
+	color: #7e551b;
+}
+
+#preplanned-info div {
+	width: 250px;
+	float: left;
+	margin-top: 30px;
+	line-height: 20px;
+}
+
+#preplanned-copy {
+	margin-bottom: 20px;
+}
+
+.preplanned-actions {
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.preplanned-actions div {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.preplanned-actions div span {
+	display: block;
+}
+
+.content p {
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+
+#kgpcontainer .ui-state-disabled,#kgpcontainer .ui-widget-content .ui-state-disabled {
+	opacity: 1;
+	filter: Alpha(Opacity-100)
+}
+
+.featuredItem_addToReqBtn {
+	display: none;
+}
+
+#kgpcontainer .cropicon.ui-draggable-dragging  {
+	background-color: transparent;
+}
+
+/******* Design Your Own ********/
+
+.kgp-mobile-message { display: none;}
+@media screen and (max-width: 958px) {
+	#kgpenvelope { display: none; }
+	.kgp-mobile-message { display: block; }
+}
+
+.sizeselect {	margin-right: 15px; width: inherit;	}
+.tab {font-size: 20px; color: #7e551b; font-weight: bold;	float: left;
+	background-color: #f9f4ed;
+	padding: 10px;
+	margin: 0 10px -1px 0;
+	cursor: pointer;
+}
+.tab.on {
+	border: 1px solid #a5988f;
+	border-bottom: 1px solid #ece6df;
+	background-color: #ece6df;
+	position: relative;
+	z-index: 10;
+}
+.tab a { color: #7e551b;}
+.steps { color: #7e551b; font-size: 14px; font-weight: bold;}
+
+
+#cropcarousel .cropicon {
+    padding-top: 10px;
+        margin-right: 1px;
+	background-color: #FFFFFF;height: 106px;
+}
+
+/******* Dialog styling ********/
+
+select option {  padding: 5px; }
+select option:nth-child(even) {
+	background-color: #ECECEC;
+}
+
+select option:nth-child(odd) {
+	background-color: #FFFFFF;
+}
+
+select option:hover {
+	background-color: #FAFFBD;
+}
+
+
+/*********** Encyclopedia ************/
+.asset-list {
+	-webkit-columns: 5 130px;
+    -moz-columns: 5 130px;
+    columns: 5 130px;
+	margin: 0;
+    padding: 0;
+}
+
+.vegetable-encylopedia ul {
+	display: block;
+}
+
+.vegetable-encylopedia h2 {
+	padding: 1em 0 0;
+	margin: 0;
+}
+.vegetable-encylopedia h2 .fa {
+	display: none;
+}
+
+@media screen and (max-width: 479px) {
+	.vegetable-encylopedia .ve-header {
+		display: none;
+	}
+	.vegetable-encylopedia h1 {
+		margin-bottom: 1em;
+	}
+	.vegetable-encylopedia h2 {
+		background-color: #eae7e0;
+	    padding: 0.5em;
+	    margin: 0;
+	    border-bottom: 1px solid #7e551b;
+		font-size: 1.6em;
+	    cursor: pointer;
+	}
+
+	.vegetable-encylopedia h2 .fa {
+	    color: #7e551b;
+	    float: right;
+	    display: inline;
+	}
+
+	.vegetable-encylopedia ul {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.vegetable-encylopedia ul li {
+		padding: 0.5em 0;
+	}
+}

@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  var $slider = $('.rotating-hero-slider');
+
+  $slider.slick({
+    autoplay: true,
+    autoplaySpeed: 3500
+  });
+
+  $slider.find('.slick-arrow').on('click', function() {
+    $slider.slick('pause');
+  })
+});

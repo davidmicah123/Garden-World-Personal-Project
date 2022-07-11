@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden World | Equipments</title>
+    <link rel="stylesheet" href="../CSS/functionality.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/scss/_icons.scss">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="shortcut icon" href="../images/GARDEN WORD.svg">
+</head>
+<body>
+    
+    <div class="sticky_navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="../images/GARDEN WORD.svg" class="logo" alt="">
+            <a class="navbar-brand" href="#" style="font-size: 5vh;"> <strong>Garden World</strong></a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar_float" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html"><strong>HOME</strong> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../HTML/about.html"><strong>ABOUT</strong></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#main_contact_section"><strong>CONTACT US</strong></a>
+              </li>
+              <li class="nav-item  dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <strong>Our Services</strong>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../HTML/blog.html"><strong>Blog</strong></a>
+                    <a class="dropdown-item" href="mailto: micahdanielsdavid2007@gmail.com"><strong>Direct Mail</strong></a>
+                    <a class="dropdown-item" href="../HTML/functionality.html"><strong>Garden Suggestion</strong></a>
+                    <a class="dropdown-item" href="../HTML/books.html"><strong>Recomended books</strong></a>
+                    <a class="dropdown-item" href="../HTML/gardening.html"><strong>Garden and Gardening</strong></a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    <section class="sidebar_section">
+        <div class="sidebar">
+            <ul>
+                <h2><strong>Our Caregories</strong></h2>
+                <li><a href="#navbar" onclick="all_equipments()">All Equipments</a></li>
+                <li><a href="#Seed_Details" onclick="display_seed_details()">Sead and Seed Details</a></li>
+                <li><a href="#soil_and_fertilizer" onclick="soil_and_fertilizer()"> Soil and fertilizer</a></li>
+                <li> <a href="#Pesticide_for_plant" onclick="Pesticide_for_plant()">Pesticide for plants</a> </li>
+                <li><a href="#meaniature_garden_toys" onclick="meaniature_garden_toys()">Meaniature garden toys</a></li>
+                <li><a href="#gardening_acessories" onclick="gardening_acessories()">Gardening Acessories</a></li>
+                <li><a href="#decorative_pebbles" onclick="decorative_pebbles()">Decorative Pebbles</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="categories_btn">
+        <button class="learn_more" onclick="display_seed_details()">Sead and Seed Details</button>
+        <button class="learn_more" onclick="soil_and_fertilizer()">Soil and fertilizer</button>
+        <button class="learn_more" onclick="Pesticide_for_plant()">Pesticide for plants</button>
+        <button class="learn_more" onclick="meaniature_garden_toys()">Meaniature garden toys</button>
+        <button class="learn_more" onclick="gardening_acessories()">Gardening Acessories</button>
+        <button class="learn_more" onclick="decorative_pebbles()">Decorative Pebbles</button>
+    </div>
+    <section class="all_display_cards" id="all_categories">
+        <div class="display_card">
+            <img src="../images/New images/flower pot.jpg" class="displaycard_img" alt=""> 
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/seed9.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/New images/pot.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div><div class="display_card">
+            <img src="../images/gwww.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/garden pot 2.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/garden ss2.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div><div class="display_card">
+            <img src="../images/room_garden2.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/room_garden3.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/mgt1.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/gwww.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/mgt4.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/gwww.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/soil1.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/pest10.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+        <div class="display_card">
+            <img src="../images/pest4.jpg" class="displaycard_img" alt="">
+            <p class="display_card_txt">
+                Garden world helps you out with all your garden problems, choice of tooks, seed, garden toys, decorative pevvles, planting pots and lots more. <br>
+                <a href=""><button class="learn_more">Learn More...</button></a>
+            </p>
+        </div>
+    </section>
+
+
+    <section id="Seed_details">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/seed5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed10.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed4.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed6.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed7.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed8.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/seed9.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Here are garden seeds, you need to plant healthy seeds in order to have effective garden yield, we provide you with related books and seed details. <br>
+                    <a href="../HTML/seed_details.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="soil_and_fertilizer">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/soil.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil3.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil4.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil6.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soilll.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/soil11.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Fertile soil is the key to high garden yield, loamy soil is the best soil for gardening, make use of loamy soil in gardening. <br>
+                    <a href="../HTML/soil_and_fertilizer.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Pesticide_for_plant">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/pest1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest3.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest4.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest6.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest7.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest8.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/pest10.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    A useful remedy to garden problem is applying pesticide to the garden, some pesticide are poisonous to plants and should not be used in gardening. <br>
+                    <a href="../HTML/pesticide_for_plant.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="meaniature_garden_toys">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/mgt1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt3.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt10.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt4.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt6.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt7.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/mgt8.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Maeniture garden toys are really useful in garden beautification, garden toys are really attractive when children have axcess to the garden. <br>
+                    <a href="../HTML/Meaniature_toys.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gardening_acessories">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/acessories9.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories3.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories4.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories6.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories7.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories8.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/acessories1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Garden acessories are basically garden tools that beautifies the garden, it makes the garden attrictive and highly presentable. <br>
+                    <a href="../HTML/Gardening_Acessories.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="decorative_pebbles">
+        <div class="all_display_cards">
+            <div class="display_card">
+                <img src="../images/decorat.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor1.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor2.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor3.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor5.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor7.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor8.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+            <div class="display_card">
+                <img src="../images/decor9.jpg" class="displaycard_img" alt="">
+                <p class="display_card_txt">
+                    Decorative pebbles are placed into garden pots or instrategic places in the garden, they are colorful and they make the garden attractive and presentable. <br>
+                    <a href="../HTML/Decorative_Pebbles.html"><button class="learn_more">Learn More...</button></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../Javascript/functionality.js"></script>
+  <script src="../bootstrap/jquery.slim.min.js"></script>
+  <script src="../bootstrap/popper.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

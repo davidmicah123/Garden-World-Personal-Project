@@ -1,0 +1,60 @@
+$(document).ready(function() {
+    const pageInfo = window.dataLayer && window.dataLayer.find(item => item.GA360PageInfo === true);
+
+    $('.menu-category .level1-link').click(function(e) {
+        if (window.dataLayer) {
+            try {
+                window.dataLayer.push({
+                    event: 'menuClick',
+                    L1: $(this).attr('title'),
+                    L2: '',
+                    L3: '',
+                    pageName: pageInfo ? pageInfo.pageName : null,
+                    pageType: pageInfo ? pageInfo.pageType : null,
+                    menuType: 'flyout', // "seasonal nav" or "flyout"
+                });
+            } catch (error) {
+                return;
+            }
+        }
+    });
+    $('.menu-category .level2-link').click(function(e) {
+        const level1Parent = $(this).closest('.level-2').siblings('.level1-link');
+        
+        if (window.dataLayer) {
+            try {
+                window.dataLayer.push({
+                    event: 'menuClick',
+                    L1: level1Parent.attr('title'),
+                    L2: $(this).attr('title'),
+                    L3: '',
+                    pageName: pageInfo ? pageInfo.pageName : null,
+                    pageType: pageInfo ? pageInfo.pageType : null,
+                    menuType: 'flyout', // "seasonal nav" or "flyout"
+                });
+            } catch (error) {
+                return;
+            }
+        }
+    });
+    $('.menu-category .level3-link').click(function(e) {
+        const level1Parent = $(this).closest('.level-2').siblings('.level1-link');
+        const level2Parent = $(this).closest('.level-3').siblings('.level2-link');
+        
+        if (window.dataLayer) {
+            try {
+                window.dataLayer.push({
+                    event: 'menuClick',
+                    L1: level1Parent.attr('title'),
+                    L2: level2Parent.attr('title'),
+                    L3: $(this).attr('title'),
+                    pageName: pageInfo ? pageInfo.pageName : null,
+                    pageType: 'L2', // populate with page type clicked from
+                    menuType: 'flyout', // "seasonal nav" or "flyout"
+                });
+            } catch (error) {
+                return;
+            }
+        }
+    });
+});

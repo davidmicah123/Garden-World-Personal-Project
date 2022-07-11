@@ -1,0 +1,7 @@
+$(document).ready(function() {
+
+    if ($('.image-listing-block').length) {
+        $('.image-listing-block__tabs').tabs();
+    }
+
+});

@@ -1,0 +1,21 @@
+$(document).ready(function() {
+    $('.dialog').dialog(
+        {
+            autoOpen: false,
+            width: 550,
+            modal: true,
+            closeOnEscape: true,
+        }
+    );
+
+    $('.popupdialog3').on('click', (e) => {
+        e.preventDefault();
+        const dialogId = $(e.target).closest('a').attr('href');
+        $(dialogId).dialog('open');
+    });
+
+    $('body').on('click', '.ui-widget-overlay', function(e) {
+        e.preventDefault();
+        $('.ui-dialog-content').dialog('close');
+    });
+});

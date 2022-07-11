@@ -1,0 +1,35 @@
+$(document).ready(function() {
+
+    if ($('.retail-rotating-image-slider').length) {
+        const $slider = $('.retail-rotating-image-slider');
+
+        $slider.slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: $('.retail-rotating-image-slider__left'),
+            nextArrow: $('.retail-rotating-image-slider__right'),
+        });
+    }//retail-rotating-image-slider
+
+    if ($('.rotating-image-slider-heading__slides').length) {
+        const $sliderHeader = $('.rotating-image-slider-heading__slides');
+
+        $sliderHeader.slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: $('.rotating-image-slider-heading__slider-left'),
+            nextArrow: $('.rotating-image-slider-heading__slider-right'),
+        });
+    }//rotating-image-slider-heading__slides
+
+});

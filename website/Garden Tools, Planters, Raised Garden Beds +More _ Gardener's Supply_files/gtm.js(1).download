@@ -1,0 +1,234 @@
+function getGA360PageInfo() {
+    try {
+        return window.dataLayer.find(item => item.GA360PageInfo === true) || null;
+    } catch (error) {
+        return null;
+    }
+}
+
+$(document).ready(function () {
+    //Home Promotion Impressions
+    if (location.pathname === '/' && window.dataLayer) {
+        var tmpError = false;
+        const getPromotions = [];
+        const pageName = getGA360PageInfo() ? getGA360PageInfo().pageName || '' : '';
+
+        const nameHero = 'hero';
+        const nameBslot = 'bslot';
+        const nameContentbslot = 'contentbslot';
+        const namePromobanner = 'promobanner';
+
+        // hero
+        try {
+            const objHero = $('a.c-hero-banner').first();
+            if (objHero.length) {
+                const objHeroAlt = objHero.attr('alt');
+                const headline = objHero.find('.c-hero-banner__headline').text();
+                const subheadline = objHero.find('.c-hero-banner__subheadline').text();
+                const creativeVal = objHeroAlt || headline + ' ' + subheadline;
+
+                getPromotions.push({
+                    id: pageName,
+                    name: nameHero,
+                    creative: creativeVal,
+                    position: '',
+                });
+            }
+        } catch (error) { tmpError = true; }
+
+        // bslot
+        try {
+            const objBslot = $('.bslot-container');
+            if (objBslot.length) {
+                objBslot.each(function (index, obj) {
+                    const creativeVal = $(this).find('.bslot-label h2').text();
+
+                    getPromotions.push({
+                        id: pageName,
+                        name: nameBslot + (index + 1),
+                        creative: creativeVal,
+                        position: '',
+                    });
+                });
+            }
+        } catch (error) { tmpError = true; }
+
+        // contentbslot
+        try {
+            const objContentbslot = $('a[class^="contentbslot"]');
+            if (objContentbslot.length) {
+                objContentbslot.each(function (index, obj) {
+                    const creativeVal = $(this)[0] ? $(this)[0].pathname || '' : '';
+
+                    getPromotions.push({
+                        id: pageName,
+                        name: nameContentbslot + (index + 1),
+                        creative: creativeVal,
+                        position: '',
+                    });
+                });
+            }
+        } catch (error) { tmpError = true; }
+
+        // promo banner
+        try {
+            const objPromobanner = $('a.c-promo-banner').first();
+            if (objPromobanner.length) {
+                const creativeVal = objPromobanner[0] ? objPromobanner[0].pathname || '' : '';
+
+                getPromotions.push({
+                    id: pageName,
+                    name: namePromobanner,
+                    creative: creativeVal,
+                    position: '',
+                });
+            }
+        } catch (error) { tmpError = true; }
+
+        // Promotion Impressions - Push
+        try {
+            window.dataLayer.push({
+                event: 'promotionImpressions',
+                ecommerce: {
+                    promoView: {
+                        promotions: getPromotions,
+                    },
+                },
+            });
+        } catch (error) { tmpError = true; }
+
+
+        // Promotions click - hero
+        try {
+            $('a.c-hero-banner').on('click', function () {
+                const objHeroAlt = $(this).attr('alt');
+                const headline = $(this).find('.c-hero-banner__headline').text();
+                const subheadline = $(this).find('.c-hero-banner__subheadline').text();
+                const creativeVal = objHeroAlt || headline + ' ' + subheadline;
+
+                if (window.dataLayer) {
+                    window.dataLayer.push({
+                        event: 'promotionClick',
+                        ecommerce: {
+                            promoClick: {
+                                promotions: [
+                                    {
+                                        id: pageName,
+                                        name: nameHero,
+                                        creative: creativeVal,
+                                        position: '',
+                                    },
+                                ],
+                            },
+                        },
+                    });
+                }
+            });
+        } catch (error) { tmpError = true; }
+
+        // Promotions Clicks - bslot
+        try {
+            $('.bslot-container').on('click', function () {
+                const creativeVal = $(this).find('.bslot-label h2').text();
+                const objIndex = $(this).index() || 0;
+
+                if (window.dataLayer) {
+                    window.dataLayer.push({
+                        event: 'promotionClick',
+                        ecommerce: {
+                            promoClick: {
+                                promotions: [
+                                    {
+                                        id: pageName,
+                                        name: nameBslot + (objIndex + 1),
+                                        creative: creativeVal,
+                                        position: '',
+                                    },
+                                ],
+                            },
+                        },
+                    });
+                }
+            });
+        } catch (error) { tmpError = true; }
+
+        // Promotions Clicks - content-bslots
+        try {
+            $('.content-bslots').on('click', function () {
+                const contentbanchor = $(this).find('a').first();
+                const contentbname = $(contentbanchor).attr('class') || '';
+                const creativeVal = $(contentbanchor)[0].pathname || '';
+
+                if (window.dataLayer) {
+                    window.dataLayer.push({
+                        event: 'promotionClick',
+                        ecommerce: {
+                            promoClick: {
+                                promotions: [
+                                    {
+                                        id: pageName,
+                                        name: contentbname,
+                                        creative: creativeVal,
+                                        position: '',
+                                    },
+                                ],
+                            },
+                        },
+                    });
+                }
+            });
+        } catch (error) { tmpError = true; }
+
+        // Promotions Clicks - promo banner
+        try {
+            $('a.c-promo-banner').on('click', function () {
+                const creativeVal = $(this)[0].pathname || '';
+
+                if (window.dataLayer) {
+                    window.dataLayer.push({
+                        event: 'promotionClick',
+                        ecommerce: {
+                            promoClick: {
+                                promotions: [
+                                    {
+                                        id: pageName,
+                                        name: namePromobanner,
+                                        creative: creativeVal,
+                                        position: '',
+                                    },
+                                ],
+                            },
+                        },
+                    });
+                }
+            });
+        } catch (error) { tmpError = true; }
+    }
+
+
+    // L2/L3 Promotion Impressions
+    const l2HEader = $('.l2-header').first();
+    if (l2HEader.length && window.dataLayer) {
+        const pageName = getGA360PageInfo() ? getGA360PageInfo().pageName || '' : '';
+
+        try {
+            const creativeVal = l2HEader.find('img').attr('alt') || '';
+
+            window.dataLayer.push({
+                event: 'promotionImpressions',
+                ecommerce: {
+                    promoView: {
+                        promotions: [
+                            {
+                                id: pageName,
+                                name: 'category hero',
+                                creative: creativeVal,
+                                position: '',
+                            },
+                        ],
+                    },
+                },
+            });
+        } finally {}
+    }
+});

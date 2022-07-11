@@ -1,0 +1,67 @@
+if ($('.retail-left-hand-navigation').length) {
+
+    var isMobile = false;
+
+    function changeDropdownText(newText) {
+        $('.retail-left-hand-navigation .mobile-dropdown span').text(newText);
+    }
+
+    function dropdownToggleClass() {
+        $('.retail-left-hand-navigation .mobile-dropdown').toggleClass('open');
+        $('.retail-left-hand-navigation__overlay').toggleClass('visible');
+        $('.retail-left-hand-navigation .lv-0').toggleClass('visible');
+    }//dropdownToggleClass
+
+    function isMobileFn() {
+        if (window.matchMedia('(min-width: 960px)').matches) { isMobile = false; }
+        else { isMobile = true; }
+    }
+    isMobileFn();
+
+    $(window).resize(isMobileFn);
+
+    if ($('.retail-left-hand-navigation').find('.active').length) {
+        $('.retail-left-hand-navigation .lv-2:has(.link.active)').siblings('.link').addClass('active');
+
+        changeDropdownText($('.retail-left-hand-navigation').find('.active').text());
+
+        //Second level
+        const lv2 = $('.retail-left-hand-navigation').find('.active').siblings('.lv-2');
+        const haslv2 = lv2.length;
+        if (haslv2) {
+            $('.retail-left-hand-navigation .second-level-list').html(lv2.clone());
+        }
+    } else {
+        changeDropdownText($('.retail-left-hand-navigation .link').first().text());
+    }
+
+    //Link click
+    $(document).on('click', '.retail-left-hand-navigation .link', function(event) {
+        if ($(this).hasClass('active')) {
+            return false;
+        }
+
+        const lv2 = $(event.target).siblings('.lv-2');
+        const haslv2 = lv2.length;
+
+        if (haslv2) {
+            event.preventDefault();
+            changeDropdownText($(this).text());
+
+            //Active link
+            $('.retail-left-hand-navigation .link').not($(this)).removeClass('active');
+            $(this).addClass('active');
+
+            //Second level
+            $('.retail-left-hand-navigation .second-level-list').html(lv2.clone());
+
+            if (isMobile) {
+                dropdownToggleClass();
+            }
+        }
+    });
+
+    //Dropdown click
+    $(document).on('click', '.retail-left-hand-navigation .mobile-dropdown', dropdownToggleClass);
+
+}//retail-left-hand-navigation
