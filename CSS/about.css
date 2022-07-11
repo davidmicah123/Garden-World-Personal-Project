@@ -274,6 +274,7 @@ body{
     background-image: linear-gradient(#ffffff00, rgba(255, 249, 249, 0)), url(../images/ME.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 25vw;
     height: 60vh;
     border-radius: 1.5em;
@@ -287,6 +288,7 @@ body{
     background-image: linear-gradient(#00000000, rgba(255, 255, 255, 0)), url(../images/ME.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 25vw;
     height: 60vh;
     border-radius: 1.5em;
