@@ -122,6 +122,7 @@ body{
 .what_we_do_img{
     width: 27vw;
     height: 35vh;
+    overflow: hidden;
     transition: 0.2s all;
 }
 .what_we_do_img:hover{
