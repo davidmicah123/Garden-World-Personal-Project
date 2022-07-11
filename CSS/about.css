@@ -281,10 +281,10 @@ body{
 }
 
 .profile_picture2:hover{
-    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/team3.png);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/ME.jpg);
 }
 .profile_picture3{
-    background-image: linear-gradient(#00000000, rgba(255, 255, 255, 0)), url(../images/team4.png);
+    background-image: linear-gradient(#00000000, rgba(255, 255, 255, 0)), url(../images/ME.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 25vw;
@@ -292,7 +292,7 @@ body{
     border-radius: 1.5em;
 }
 .profile_picture3:hover{
-    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/team4.png);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(../images/ME.jpg);
 }
 
 
