@@ -919,6 +919,17 @@ body{
         width: 90vw;
         margin-left: 5vw;
     }
+    
+    .footer_conclusion {
+        margin-left: 4vw;
+    }
+    .footer_division2{
+        margin-top: 16vh;
+        padding-left: 4vw;
+    }
+    .news_letter{
+        width: 90vw;
+    }
 }
 @media (max-width: 350px) {
     .special_team{
