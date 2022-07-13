@@ -1375,6 +1375,9 @@ body{
     .textimonial_img{
         width: 25vw;
     }
+    .news_letter{
+        display: none;
+    }
 }
 
 
