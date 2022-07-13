@@ -1375,8 +1375,15 @@ body{
     .textimonial_img{
         width: 25vw;
     }
+    .footer_conclusion {
+        margin-left: 4vw;
+    }
+    .footer_division2{
+        margin-top: 16vh;
+        padding-left: 4vw;
+    }
     .news_letter{
-        display: none;
+        width: 90vw;
     }
 }
 
