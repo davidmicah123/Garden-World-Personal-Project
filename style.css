@@ -545,7 +545,7 @@ body{
 
 /* garden banner  */
 .garden_banner{
-    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(images/indoor.jpg);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)), url(images/about_hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
