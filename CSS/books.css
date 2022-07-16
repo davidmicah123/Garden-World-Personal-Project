@@ -59,7 +59,7 @@ body{
 
 /* This is the Hero section  */
 .hero_image{
-    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)),  url(../images/book_hero.jpg);
+    background-image: linear-gradient(#00000000, rgba(0, 0, 0, 0.61)),  url(../images/books_img_hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
