@@ -61,7 +61,7 @@ body{
 }
 /* This is the Hero section  */
 .hero_image{
-    background-image: url('../images/er.jpg');
+    background-image: url('../images/about_hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 75vh;
