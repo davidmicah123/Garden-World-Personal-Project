@@ -76,3 +76,8 @@ function submitted_form(){
 // }
 
 const toggleScroll = document.querySelector('.contact_toggle');
+const scrollTO = document.querySelector('.contact_section');
+toggleScroll.addEventListener('click', function(){
+    scrollTO.scrollIntoView({behavior: 'smooth'});
+});
+
