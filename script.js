@@ -74,3 +74,5 @@ function submitted_form(){
 // function home(){
 //     document.getElementById('home').setAttribute('style', 'background-color: green;');
 // }
+
+const toggleScroll = document.querySelector('.contact_toggle');
